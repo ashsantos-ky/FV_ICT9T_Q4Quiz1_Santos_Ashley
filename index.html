@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+	<title>Quiz 1</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<h1>Body Mass Index (BMI) Calculator.</h1>
+	<form>
+		<details ontoggle="message()">
+			<summary>Instructions</summary>
+				<i>Enter two numbers to calculate your BMI.</i>
+		</details>
+		<br><br>
+	<label>Weight in Kilogram</label>
+	<br>
+		<input type="text" id="kilo" class="form-control">
+		<br><br>
+	<label>Height in Meter</label>
+	<br>
+		<input type="text" id="meter" class="form-control">
+	<br>
+		<button type="Submit" class="btn" onclick="divide()">Results</button>
+
+	</form>
+
+	<script>
+		function BMI(){
+		var kilo = document.getElementById("kilo").value;
+		var meter = document.getElementById("meter").value;
+		var quotient = Number(kilo) / Number(meter);
+		document.write("Results" +quotient);
+
+		var x = 18.5;
+		var y = 30;
+
+	if((x >= y)|| (x <= y)){
+		alert(Normalweight);
+	}
+		if(y < 18.5){
+			alert('Underweight');
+		}else if (y >= '25'){
+			alert("Overweight");
+		}else if (y <= '29.9'){
+			alert("Overweight");
+		}else (y >= 30){
+			aler("Obese");
+		}
+	</script>
+
+
+</body>
+</html>
